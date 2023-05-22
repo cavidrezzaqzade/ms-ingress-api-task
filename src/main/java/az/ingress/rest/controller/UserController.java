@@ -48,7 +48,7 @@ public class UserController {
 
     @PatchMapping
     @Operation(summary = "update by criteria", description = "update by criteria", tags = {"User"})
-    public UserDto update(/*@RequestParam(required = false) */UserCriteria user){
+    public UserDto update(UserCriteria user){
         return service.update(user);
     }
 
